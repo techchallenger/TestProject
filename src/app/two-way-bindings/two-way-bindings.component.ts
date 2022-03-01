@@ -9,10 +9,19 @@ export class TwoWayBindingsComponent implements OnInit {
 
   FirstName:string="";
   LastName:string="";
+  Email:string="";
+
+
+  modelObject={firstName:"", lastName:"",email:""};
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  SaveRecord()
+  {
+    
   }
 
 }

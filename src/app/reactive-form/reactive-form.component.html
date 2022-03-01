@@ -1,0 +1,12 @@
+<p>reactive-form works!</p>
+
+<form name="frmReg" [formGroup]="frmReg" (ngSubmit)="SaveRecord()" novalidate="" >
+First Name : <input type="text" name="FirstName" [(ngModel)]="studentModel.FirstName" formControlName="FirstName" >
+
+<span *ngIf="frmReg.controls['FirstName'].touched && frmReg.controls['FirstName'].invalid">Invalid Details</span>
+
+Last Name : <input type="text" name="LastName" [(ngModel)]="studentModel.LastName" formControlName="LastName">
+<input type="button" value="Submit" (click)="SaveRecord()" [disabled]="frmReg.invalid">
+</form>
+
+<br><br><br><br><br>

@@ -1,4 +1,14 @@
-<p>two-way-bindings works!</p>
+<p>Two-way-bindings</p>
 
 First Name : <input type="text" name="FirstName" [(ngModel)]="FirstName">
 Last Name : <input type="text" name="LastName" [(ngModel)]="LastName">
+Email : <input type="text" name="Email" [(ngModel)]="Email">
+<input type="button" value="Submit" (click)="SaveRecord()">
+
+
+<h5>Other way of Binding Properties</h5>
+
+First Name : <input type="text" name="FirstName" [(ngModel)]="modelObject.firstName">
+Last Name : <input type="text" name="LastName" [(ngModel)]="modelObject.lastName">
+Email : <input type="text" name="Email" [(ngModel)]="modelObject.email">
+<input type="button" value="Submit" (click)="SaveRecord()">
